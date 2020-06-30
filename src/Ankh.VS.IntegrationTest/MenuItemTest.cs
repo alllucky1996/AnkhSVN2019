@@ -24,7 +24,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VsSDK.IntegrationTestLibrary;
 using Microsoft.VSSDK.Tools.VsIdeTesting;
 using Ankh;
-using System.Fabric;
 
 namespace AnkhSvn_IntegrationTestProject
 {

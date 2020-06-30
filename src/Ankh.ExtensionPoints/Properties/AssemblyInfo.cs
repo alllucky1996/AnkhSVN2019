@@ -29,7 +29,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("AnkhSVN Team")]
 [assembly: AssemblyProduct("AnkhSVN2019 - Subversion Support for Visual Studio")]
-[assembly: AssemblyCopyright("Copyright © AnkhSVN Team 2003-2012")]
+[assembly: AssemblyCopyright("Copyright © AnkhSVN Team 2003-2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en-US")]
@@ -52,4 +52,4 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.00.0.0009")]
+[assembly: AssemblyVersion("1.00.0.0010")]

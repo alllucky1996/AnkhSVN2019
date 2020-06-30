@@ -117,7 +117,7 @@ namespace Ankh.VS.TextEditor
             get { return !_notInteractiveEditor; }
             set
             {
-                _notInteractiveEditor = ! value;
+                _notInteractiveEditor = !value;
 
                 if (_nativeWindow != null)
                     _nativeWindow.InteractiveEditor = value;
@@ -237,9 +237,9 @@ namespace Ankh.VS.TextEditor
                         topParent = parent;
 
                         // Hack
-                        if ( topParent is VSEditorControl)
+                        if (topParent is VSEditorControl)
                         {
-                            break ;
+                            break;
                         }
                     }
                 }

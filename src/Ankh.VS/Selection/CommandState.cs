@@ -406,11 +406,10 @@ namespace Ankh.VS.Selection
 
             _themeLight = _themeDark = false;
             IAnkhConfigurationService config = GetService<IAnkhConfigurationService>();
-            IWinFormsThemingService   wts    = GetService<IWinFormsThemingService>();
 
             Guid themeGuid;
 
-            if ( config == null || wts == null || !wts.GetCurrentTheme(out themeGuid) )
+            if (config == null || !GetService<IWinFormsThemingService>().GetCurrentTheme(out themeGuid))
             {
                 _themed = false;
                 return;

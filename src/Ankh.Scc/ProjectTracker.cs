@@ -120,10 +120,10 @@ namespace Ankh.Scc
         {
             get
             {
-                // Github Issue #7
+                // GitHub-Issue: #7 https://github.com/PhilJollans/AnkhSVN2019/issues/7
                 // Additional error checking, might help to localize the error.
-                if ( _sccProvider == null )
-                  throw new Exception ( "Internal error: _sccProvider == null" ) ;
+                if (_sccProvider == null)
+                    throw new Exception("Internal error: _sccProvider == null");
 
                 return _sccProvider.ProjectMap;
             }

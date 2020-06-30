@@ -39,7 +39,6 @@ namespace Ankh.VS.SolutionExplorer
             : base(context)
         {
             _imageList = new ImageList();
-            _imageList = new ImageList();
             _imageList.ImageSize = new Size(16, 16);
             _imageList.ColorDepth = ColorDepth.Depth32Bit;
             _iconMap = new Dictionary<ProjectIconReference, int>();
@@ -426,7 +425,7 @@ namespace Ankh.VS.SolutionExplorer
 
             [DllImport("shell32.dll")]
             public static extern int SHGetFolderLocation(IntPtr hwndOwner,
-                [MarshalAs(UnmanagedType.I4)]WindowsSpecialFolder nFolder,
+                [MarshalAs(UnmanagedType.I4)] WindowsSpecialFolder nFolder,
                 IntPtr hToken, uint dwReserved, out IntPtr ppidl);
         }
     }

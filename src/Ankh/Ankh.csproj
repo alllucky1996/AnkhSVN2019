@@ -87,6 +87,7 @@
     <Compile Include="Services\TempFileManager.cs" />
     <Compile Include="Services\ThemingService.cs" />
     <Compile Include="Services\ThemingService.GetTheme.cs" />
+    <Compile Include="Services\XMail.cs" />
     <EmbeddedResource Include="Services\ServiceStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ServiceStrings.Designer.cs</LastGenOutput>

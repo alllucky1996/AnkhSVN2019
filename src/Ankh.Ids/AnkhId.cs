@@ -30,9 +30,9 @@ namespace Ankh
         /// The guid the AnkhSvn package is registered with inside Visual Studio
         /// </summary>
         //public const string PackageId = "604ad610-5cf9-4bd5-8acc-f49810e2efd4";
-        // This is the only UUID which I have changed for AnkhSVN2019
+        // This is the only UUID which I have changed for Jan-AnkhSVN2019
         public const string PackageId = "321833BC-D00D-4076-9FDD-AC485EFDAEB2";
-        public const string PackageDescription = "AnkhSVN2019 - Subversion Support for Visual Studio";
+        public const string PackageDescription = "Jan-AnkhSVN2019 - Subversion Support for Visual Studio";
 
         /// <summary>The package version as used in the PLK</summary>
         public const string PlkVersion = "2.0";
@@ -42,8 +42,8 @@ namespace Ankh
         public const string PlkCompany = "AnkhSVN Core Team";
         //**********************************************************************************
 
-        public const string AssemblyCopyright = "Copyright © AnkhSVN Team 2003-2019";
-        public const string AssemblyProduct = "AnkhSVN2019 - Subversion Support for Visual Studio";
+        public const string AssemblyCopyright = "Copyright © AnkhSVN Team 2003-2020";
+        public const string AssemblyProduct = "Jan-AnkhSVN2019 - Subversion Support for Visual Studio";
         public const string AssemblyCompany = "AnkhSVN Team";
         //**********************************************************************************
 
@@ -60,7 +60,7 @@ namespace Ankh
         // Items for the VS 2010 Extension registration
         public const string ExtensionTitle = AnkhId.AssemblyProduct;
         public const string ExtensionAuthor = AnkhId.AssemblyCompany;
-        public const string ExtensionDescription = "Open Source Subversion SCC Provider for Visual Studio 2005, 2008, 2010, 2012, 2013 and 2015.";
+        public const string ExtensionDescription = "Open Source Subversion SCC Provider for Visual Studio 2005, 2008, 2010, 2012, 2013 and 2015, 2019.";
         public const string ExtensionMoreInfoUrl = "http://www.ankhsvn.net/";
         public const string ExtensionGettingStartedUrl = "http://www.ankhsvn.net/";
         public const string ExtensionReleaseNotesUrl = "http://ankhsvn.net/releasenotes";

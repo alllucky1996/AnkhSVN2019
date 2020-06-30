@@ -38,9 +38,9 @@ namespace Ankh.Services
     [GlobalService(typeof(IAnkhErrorHandler), AllowPreRegistered = true)]
     class AnkhErrorHandler : AnkhService, IAnkhErrorHandler
     {
-      //const string _errorReportMailAddress = "error@support.ankhsvn.net";
+        //const string _errorReportMailAddress = "error@support.ankhsvn.net";
         // Since this is my fork of AnkhSVN, I had better change the email address for error messages.
-        const string _errorReportMailAddress = "ankh@jollans.com";
+        const string _errorReportMailAddress = "itfa.ahihi@gmail.com";
         const string _errorReportSubject = "Exception";
         readonly HandlerDelegator Handler;
 
@@ -52,13 +52,11 @@ namespace Ankh.Services
 
         public bool IsEnabled(Exception ex)
         {
+#if DEBUG
+            return false;
+#else
             return true;
-// Phil: I have no idea what this was for.
-//#if DEBUG
-//            return false;
-//#else
-//            return true;
-//#endif
+#endif
         }
 
         /// <summary>

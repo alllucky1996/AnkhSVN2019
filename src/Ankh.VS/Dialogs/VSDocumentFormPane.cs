@@ -189,11 +189,11 @@ namespace Ankh.VS.Dialogs
             else if (host == null)
                 throw new ArgumentNullException("host");
 
-            _context  = context;
+            _context = context;
             _instance = instance;
-            _form     = null;
-            Content   = host;
-            _host     = new VSDocumentHost(this);
+            _form = null;
+            Content = host;
+            _host = new VSDocumentHost(this);
         }
 
         public IAnkhEditorPane Host
@@ -211,8 +211,8 @@ namespace Ankh.VS.Dialogs
         {
             get
             {
-                if ( _form == null )
-                    return base.Window ;
+                if (_form == null)
+                    return base.Window;
                 else
                 {
                     if (!_created)
@@ -232,7 +232,7 @@ namespace Ankh.VS.Dialogs
 
         protected override void OnCreate()
         {
-            if ( _form != null )
+            if (_form != null)
             {
                 //_host.Load();
                 _form.Site = _host;

@@ -22,6 +22,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Threading.Tasks;
 
 namespace Ankh.UI.VSSelectionControls
 {
@@ -945,7 +946,7 @@ namespace Ankh.UI.VSSelectionControls
         }
 
         //
-        // GitHub Issue #13
+        // GitHub-Issue: #13 https://github.com/PhilJollans/AnkhSVN2019/issues/13
         // The error report indicates a null reference in this method. It seems very unlikely, but
         // I am adding more checking to prevent it.
         //
@@ -960,38 +961,31 @@ namespace Ankh.UI.VSSelectionControls
                 return;
             }
 
-            if (CheckBoxes && ShowSelectAllCheckBox)
+            if (e.Item != null && CheckBoxes && ShowSelectAllCheckBox) // Check for e.Item is null (Github Issue #13)
             {
-                // Check for null (Github Issue #13)
-                if ( e.Item != null )
+                bool check = e.Item.Checked;
+                if (SelectAllChecked && !check && IsPartOfSelectAll(e.Item))
                 {
-                    bool check = e.Item.Checked;
-                    if (SelectAllChecked && !check && IsPartOfSelectAll(e.Item))
+                    SelectAllChecked = false;
+                    UpdateSortGlyphs();
+                }
+                else if (!SelectAllChecked && check)
+                {
+                    bool allChecked = true;
+                    foreach (ListViewItem i in Items)
                     {
-                        SelectAllChecked = false;
-                        UpdateSortGlyphs();
+                        // Check for i is null (Github Issue #13)
+                        if (i != null && !i.Checked && IsPartOfSelectAll(i))
+                        {
+                            allChecked = false;
+                            break;
+                        }
                     }
-                    else if (!SelectAllChecked && check)
-                    {
-                        bool allChecked = true;
-                        foreach (ListViewItem i in Items)
-                        {
-                            // Check for null (Github Issue #13)
-                            if ( i != null )
-                            {
-                                if (!i.Checked && IsPartOfSelectAll(i))
-                                {
-                                    allChecked = false;
-                                    break;
-                                }
-                            }
-                        }
 
-                        if (allChecked)
-                        {
-                            SelectAllChecked = true;
-                            UpdateSortGlyphs();
-                        }
+                    if (allChecked)
+                    {
+                        SelectAllChecked = true;
+                        UpdateSortGlyphs();
                     }
                 }
             }
@@ -1284,7 +1278,7 @@ namespace Ankh.UI.VSSelectionControls
             {
                 base.OnParentChanged(EventArgs.Empty); // Recreate handle, keeping state
             }
-            catch(Exception ee)
+            catch (Exception ee)
             {
                 IAnkhErrorHandler handler = sender.GetService<IAnkhErrorHandler>();
 

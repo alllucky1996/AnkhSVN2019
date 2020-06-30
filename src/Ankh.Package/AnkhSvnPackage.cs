@@ -92,7 +92,7 @@ namespace Ankh.VSPackage
         /// </summary>
         public AnkhSvnPackage()
         {
-
+            
         }
 
         protected override void Dispose (bool disposing)
@@ -117,7 +117,7 @@ namespace Ankh.VSPackage
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
             _runtime = new AnkhRuntime(this);
-
+                       
             // The VS2005 SDK code changes the global VS UI culture, but that
             // is not the way we should behave: We should keep the global
             // state how VS initialized it.

@@ -22,6 +22,7 @@ using System.Reflection;
 using System.Collections.Specialized;
 using System.Collections;
 using System.Text;
+using Common.Handlers.Helper;
 
 namespace Ankh.Services
 {
@@ -38,12 +39,6 @@ namespace Ankh.Services
         /// <returns></returns>
         public static string GetMessage(Exception ex)
         {
-#if true
-            // According to https://stackoverflow.com/questions/2176707/exception-message-vs-exception-tostring
-            // the Exception.ToString provides all this and more. In particular, it includes the parameter text
-            // provided to the exception. For example for ArgumentNullException it includes the name of the paramter.
-            return ex.ToString() ;
-#else
             StringBuilder sb = new StringBuilder();
             while (ex != null)
             {
@@ -55,7 +50,6 @@ namespace Ankh.Services
             }
 
             return sb.ToString();
-#endif
         }
 
         /// <summary>
@@ -64,7 +58,7 @@ namespace Ankh.Services
         /// <param name="recipient"></param>
         /// <param name="subject"></param>
         /// <param name="ex"></param>
-        /// <param name="assembly">The assembly where the error originated. This will
+        /// <param name="assembly">The assembly where the error originated. This will 
         /// be used to extract version information.</param>
         public static void SendByMail(string recipient, string subject, Exception ex,
             Assembly assembly, StringDictionary additionalInfo)
@@ -80,9 +74,9 @@ namespace Ankh.Services
 
             // Send mail using MAPI class instead of the mailto command, because mailto truncates
             // the message text, probably removing all of the additional information :(
-            var MapiMail = new MAPI() ;
-            MapiMail.AddRecipientTo ( recipient ) ;
-            MapiMail.SendMailPopup  ( subject, msg.ToString() ) ;
+            var MapiMail = new MAPI();
+            MapiMail.AddRecipientTo(recipient);
+            MapiMail.SendMailPopup(subject, msg.ToString());
         }
 
         private static string GetAttributes(StringDictionary additionalInfo)

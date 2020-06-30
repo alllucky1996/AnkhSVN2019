@@ -39,7 +39,9 @@ namespace Ankh.Scc.Commands
             {
                 SccHierarchy hier = EnumTools.GetSingle(e.Selection.GetSelectedHierarchies());
 
-                if ( hier != null && !String.IsNullOrEmpty(hier.Name) && map.ContainsKey(hier.Name) )
+                //  if ( hier != null && !String.IsNullOrEmpty(hier.Name) && map.ContainsKey(hier.Name) )
+                // alllucly1996-dũng: I saw IsNullOrEmpty(hier.Name) seems unnecessary
+                if (hier != null && map.ContainsKey(hier.Name))
                     return;
             }
 

@@ -1,4 +1,4 @@
-// $Id$
+﻿// $Id$
 //
 // Copyright 2008-2009 The AnkhSVN Project
 //
@@ -14,13 +14,9 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-using System;
-using System.Windows;
-using System.Collections.Generic;
-using System.Text;
 using Ankh.UI;
-using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell.Interop;
+using System;
 
 namespace Ankh.VS.Dialogs
 {
@@ -39,14 +35,14 @@ namespace Ankh.VS.Dialogs
 
             doc = dc;
         }
+        // alllucky1996 - dũng: I don't see it used
+        //public void ProvideEditor(FrameworkElement host, Guid factoryId, out object doc, out object pane)
+        //{
+        //    VSDocumentInstance dc = new VSDocumentInstance(Context, factoryId);
+        //    pane = new VSDocumentFormPane(Context, dc, host);
 
-        public void ProvideEditor(FrameworkElement host, Guid factoryId, out object doc, out object pane)
-        {
-            VSDocumentInstance dc = new VSDocumentInstance(Context, factoryId);
-            pane = new VSDocumentFormPane(Context, dc, host);
-
-            doc = dc;
-        }
+        //    doc = dc;
+        //}
 
         #region IAnkhDocumentHostService Members
 

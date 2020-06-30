@@ -105,7 +105,7 @@ namespace Ankh.VSPackage
             if (frame == null)
                 return;
 
-            Marshal.ThrowExceptionForHR(frame.CloseFrame((uint) close));
+            Marshal.ThrowExceptionForHR(frame.CloseFrame((uint)close));
         }
 
         AmbientProperties _ambientProperties;
@@ -389,10 +389,10 @@ namespace Ankh.VSPackage
             // https://github.com/PhilJollans/AnkhSVN2019/issues/3
             try
             {
-                // I'n not really sure what I am doing here.
-                var prev = NativeImports.SetThreadDpiAwarenessContext ( NativeImports.DPI_AWARENESS_CONTEXT.SystemAware ) ;
+                // I'm not really sure what I am doing here.
+                var prev = NativeImports.SetThreadDpiAwarenessContext(NativeImports.DPI_AWARENESS_CONTEXT.SystemAware);
             }
-            catch ( EntryPointNotFoundException )
+            catch (EntryPointNotFoundException)
             {
                 // Ignore if the entry point is not present
             }

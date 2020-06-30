@@ -66,12 +66,13 @@ namespace Ankh.Scc
         [CLSCompliant(false)]
         public SccProjectMap ProjectMap
         {
+            [DebuggerStepThrough]
             get
             {
-                // Github Issue #7
+                // Github-Issue: #7 https://github.com/PhilJollans/AnkhSVN2019/issues/7
                 // Additional error checking, might help to localize the error.
-                if ( _projectMap == null )
-                  throw new Exception ( "Internal error: _projectMap == null" ) ;
+                if (_projectMap == null)
+                    throw new Exception("Internal error: _projectMap == null");
 
                 return _projectMap;
             }
@@ -130,7 +131,7 @@ namespace Ankh.Scc
             {
                 SetActive(true);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return VSErr.GetHRForException(e);
             }
@@ -152,7 +153,7 @@ namespace Ankh.Scc
             return VSErr.S_OK;
         }
 
-        protected abstract Guid ProviderGuid {get;}
+        protected abstract Guid ProviderGuid { get; }
 
         public void RegisterAsPrimarySccProvider()
         {
@@ -422,7 +423,7 @@ namespace Ankh.Scc
                 OnRegisterSccProject(data, pszProvider);
                 return VSErr.S_OK;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return VSErr.GetHRForException(e);
             }
@@ -602,7 +603,7 @@ namespace Ankh.Scc
                 OnAddNewSolutionToSourceControl(EventArgs.Empty);
                 return VSErr.S_OK;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return VSErr.GetHRForException(e);
             }
