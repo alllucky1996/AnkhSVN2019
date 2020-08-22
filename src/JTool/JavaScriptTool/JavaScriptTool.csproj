@@ -81,6 +81,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.205" ExcludeAssets="runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.6.2057" />
+    <PackageReference Include="NUglify">
+      <Version>1.6.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <VSCTCompile Include="JavaScriptViewModel\JavaScriptToolPackage.vsct">
