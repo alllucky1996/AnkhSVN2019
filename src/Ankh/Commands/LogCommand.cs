@@ -1,4 +1,4 @@
-// $Id$
+﻿// $Id$
 //
 // Copyright 2005-2009 The AnkhSVN Project
 //
@@ -107,7 +107,7 @@ namespace Ankh.Commands
                         Debug.Assert(needsRemoteCount == 1);
                         return;
                     }
-                    
+
                     // Local log only
                     return;
                 case AnkhCommand.ReposExplorerLog:
@@ -200,6 +200,7 @@ namespace Ankh.Commands
                     PerformLog(e.Context, new SvnOrigin[] { section.Origin }, section.Revision, null);
 
                     break;
+               
             }
         }
 
@@ -213,5 +214,6 @@ namespace Ankh.Commands
             if (logToolControl != null)
                 logToolControl.StartLog(targets, start, end);
         }
+
     }
 }

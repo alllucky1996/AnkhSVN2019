@@ -32,54 +32,61 @@ namespace Ankh.UI
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgressDialog));
-			this.cancelButton = new System.Windows.Forms.Button();
-			this.actionList = new Ankh.UI.VSSelectionControls.SmartListView();
-			this.actionColumn = new System.Windows.Forms.ColumnHeader();
-			this.pathColumn = new System.Windows.Forms.ColumnHeader();
-			this.progressLabel = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// cancelButton
-			// 
-			resources.ApplyResources(this.cancelButton, "cancelButton");
-			this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.cancelButton.Name = "cancelButton";
-			this.cancelButton.Click += new System.EventHandler(this.CancelClick);
-			// 
-			// actionList
-			// 
-			resources.ApplyResources(this.actionList, "actionList");
-			this.actionList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.actionColumn,
-            this.pathColumn});
-			this.actionList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.actionList.Name = "actionList";
-			// 
-			// actionColumn
-			// 
-			resources.ApplyResources(this.actionColumn, "actionColumn");
-			// 
-			// pathColumn
-			// 
-			resources.ApplyResources(this.pathColumn, "pathColumn");
-			// 
-			// progressLabel
-			// 
-			resources.ApplyResources(this.progressLabel, "progressLabel");
-			this.progressLabel.Name = "progressLabel";
-			// 
-			// ProgressDialog
-			// 
-			resources.ApplyResources(this, "$this");
-			this.CancelButton = this.cancelButton;
-			this.ControlBox = false;
-			this.Controls.Add(this.progressLabel);
-			this.Controls.Add(this.actionList);
-			this.Controls.Add(this.cancelButton);
-			this.Name = "ProgressDialog";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgressDialog));
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.actionList = new Ankh.UI.VSSelectionControls.SmartListView();
+            this.actionColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pathColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.progressLabel = new System.Windows.Forms.Label();
+            this.btnHidden = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // cancelButton
+            // 
+            resources.ApplyResources(this.cancelButton, "cancelButton");
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Click += new System.EventHandler(this.CancelClick);
+            // 
+            // actionList
+            // 
+            resources.ApplyResources(this.actionList, "actionList");
+            this.actionList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.actionList.HideSelection = false;
+            this.actionList.Name = "actionList";
+            // 
+            // actionColumn
+            // 
+            resources.ApplyResources(this.actionColumn, "actionColumn");
+            // 
+            // pathColumn
+            // 
+            resources.ApplyResources(this.pathColumn, "pathColumn");
+            // 
+            // progressLabel
+            // 
+            resources.ApplyResources(this.progressLabel, "progressLabel");
+            this.progressLabel.Name = "progressLabel";
+            // 
+            // btnHidden
+            // 
+            resources.ApplyResources(this.btnHidden, "btnHidden");
+            this.btnHidden.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnHidden.Name = "btnHidden";
+            this.btnHidden.Click += new System.EventHandler(this.btnHidden_Click);
+            // 
+            // ProgressDialog
+            // 
+            resources.ApplyResources(this, "$this");
+            this.CancelButton = this.cancelButton;
+            this.ControlBox = false;
+            this.Controls.Add(this.progressLabel);
+            this.Controls.Add(this.actionList);
+            this.Controls.Add(this.btnHidden);
+            this.Controls.Add(this.cancelButton);
+            this.Name = "ProgressDialog";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
@@ -89,5 +96,6 @@ namespace Ankh.UI
         private System.Windows.Forms.ColumnHeader actionColumn;
         private System.Windows.Forms.ColumnHeader pathColumn;
         private System.Windows.Forms.Label progressLabel;
+        private System.Windows.Forms.Button btnHidden;
     }
 }

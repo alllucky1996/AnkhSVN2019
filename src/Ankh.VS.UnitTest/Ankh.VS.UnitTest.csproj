@@ -86,6 +86,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account.txt" />
+    <Compile Include="GennertorJSTests.cs" />
     <Compile Include="Helpers\AnkhServiceProvider.cs" />
     <Compile Include="CommandRouting\CommandRoutingTest.cs" />
     <Compile Include="CommandRouting\CommandTests.cs" />

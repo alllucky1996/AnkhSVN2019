@@ -112,23 +112,23 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>360, 166</value>
   </data>
   <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -139,28 +139,16 @@
     <value>cancelButton</value>
   </data>
   <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="actionList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="actionColumn.Text" xml:space="preserve">
-    <value>Action</value>
-  </data>
-  <data name="actionColumn.Width" type="System.Int32, mscorlib">
-    <value>74</value>
-  </data>
-  <data name="pathColumn.Text" xml:space="preserve">
-    <value>Path</value>
-  </data>
-  <data name="pathColumn.Width" type="System.Int32, mscorlib">
-    <value>329</value>
   </data>
   <data name="actionList.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 16</value>
@@ -175,13 +163,25 @@
     <value>actionList</value>
   </data>
   <data name="&gt;&gt;actionList.Type" xml:space="preserve">
-    <value>Ankh.UI.VSSelectionControls.SmartListView, Ankh.UI, Version=2.2.3790.25434, Culture=neutral, PublicKeyToken=d0beed809dd9333a</value>
+    <value>Ankh.UI.VSSelectionControls.SmartListView, Ankh.UI, Version=1.0.0.10, Culture=neutral, PublicKeyToken=d0beed809dd9333a</value>
   </data>
   <data name="&gt;&gt;actionList.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;actionList.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="actionColumn.Text" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="actionColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="pathColumn.Text" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="pathColumn.Width" type="System.Int32, mscorlib">
+    <value>329</value>
   </data>
   <data name="progressLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -202,7 +202,7 @@
     <value>progressLabel</value>
   </data>
   <data name="&gt;&gt;progressLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progressLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -210,7 +210,37 @@
   <data name="&gt;&gt;progressLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="btnHidden.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnHidden.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 166</value>
+  </data>
+  <data name="btnHidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnHidden.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnHidden.Text" xml:space="preserve">
+    <value>Ẩn đi</value>
+  </data>
+  <data name="&gt;&gt;btnHidden.Name" xml:space="preserve">
+    <value>btnHidden</value>
+  </data>
+  <data name="&gt;&gt;btnHidden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHidden.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnHidden.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -226,18 +256,18 @@
     <value>actionColumn</value>
   </data>
   <data name="&gt;&gt;actionColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pathColumn.Name" xml:space="preserve">
     <value>pathColumn</value>
   </data>
   <data name="&gt;&gt;pathColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ProgressDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Ankh.UI.VSDialogForm, Ankh.Services, Version=2.2.3790.25433, Culture=neutral, PublicKeyToken=a8604ba8fc87eddd</value>
+    <value>Ankh.UI.VSDialogForm, Ankh.Services, Version=1.0.0.10, Culture=neutral, PublicKeyToken=a8604ba8fc87eddd</value>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="100" xml:space="preserve">
-    <value>AnkhSVN2019 - Subversion Support for Visual Studio</value>
+    <value>JAN-AnkhSVN - Subversion Support for Visual Studio</value>
     <comment>SCC GUI Name</comment>
   </data>
   <data name="101" xml:space="preserve">
@@ -132,7 +132,7 @@
     <value>Subversion Environment</value>
   </data>
   <data name="110" xml:space="preserve">
-    <value>AnkhSVN2019</value>
+    <value>JAN-AnkhSVN</value>
   </data>
   <data name="112" xml:space="preserve">
     <value>AnkhSVN - Subversion Support for Visual Studio</value>
@@ -195,5 +195,32 @@
   </data>
   <data name="109" xml:space="preserve">
     <value>Git Environment</value>
+  </data>
+  <data name="1110" xml:space="preserve">
+    <value>Command1 Extension</value>
+  </data>
+  <data name="1112" xml:space="preserve">
+    <value>Command1 Visual Stuido Extension Detailed Info</value>
+  </data>
+  <data name="1400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Command1Package.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2110" xml:space="preserve">
+    <value>Cmd_ScriptBuilder Extension</value>
+  </data>
+  <data name="2112" xml:space="preserve">
+    <value>Cmd_ScriptBuilder Visual Stuido Extension Detailed Info</value>
+  </data>
+  <data name="2400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cmd_ScriptBuilderPackage.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3110" xml:space="preserve">
+    <value>CmdGenScriptViewModel Extension</value>
+  </data>
+  <data name="3112" xml:space="preserve">
+    <value>CmdGenScriptViewModel Visual Stuido Extension Detailed Info</value>
+  </data>
+  <data name="3400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>JanTool\Resources\CmdGenScriptViewModelPackage.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

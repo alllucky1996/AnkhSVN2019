@@ -498,5 +498,11 @@ namespace Ankh.UI
             this.cancelButton.Text = "Cancelling...";
             this.cancelButton.Enabled = false;
         }
+
+        private void btnHidden_Click(object sender, EventArgs e)
+        {
+            this.cancelButton.Enabled = false;
+            this.Hide();
+        }
     }
 }

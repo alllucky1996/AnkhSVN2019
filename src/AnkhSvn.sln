@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29201.188
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Definitions", "Definitions", "{01F3ED56-C896-409C-8464-DB82B3AF1364}"
 	ProjectSection(SolutionItems) = preProject
@@ -83,6 +83,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankh.ImageCatalog", "Ankh.ImageCatalog\Ankh.ImageCatalog.csproj", "{B52EC60A-F421-4224-9038-6DD2CE9A7AB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankh.ImageCatalogTest", "Ankh.ImageCatalogTest\Ankh.ImageCatalogTest.csproj", "{6A9DFA7F-17D4-4A0F-8926-1B0492B520D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptTool", "JTool\JavaScriptTool\JavaScriptTool.csproj", "{5C81345C-605D-48A2-BC3B-FD83C66C6F45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavaScriptTool", "JavaScriptTool", "{FB7149BE-B392-41A4-9877-091FC0AE99E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShap2JSAnalysis", "CShap2JSAnalysis\CShap2JSAnalysis.csproj", "{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -236,6 +242,22 @@ Global
 		{6A9DFA7F-17D4-4A0F-8926-1B0492B520D9}.Release|Any CPU.ActiveCfg = Release|x86
 		{6A9DFA7F-17D4-4A0F-8926-1B0492B520D9}.Release|x86.ActiveCfg = Release|x86
 		{6A9DFA7F-17D4-4A0F-8926-1B0492B520D9}.Release|x86.Build.0 = Release|x86
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45}.Release|x86.Build.0 = Release|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Debug|x86.Build.0 = Debug|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,6 +287,8 @@ Global
 		{06D68AB0-ED0B-4FC6-B085-318F9C253160} = {01F3ED56-C896-409C-8464-DB82B3AF1364}
 		{B52EC60A-F421-4224-9038-6DD2CE9A7AB1} = {08FF496A-CD90-4B17-8FA0-F4CA88AB49D3}
 		{6A9DFA7F-17D4-4A0F-8926-1B0492B520D9} = {E7D88D59-A87F-4939-AB58-315F8C41E20B}
+		{5C81345C-605D-48A2-BC3B-FD83C66C6F45} = {08FF496A-CD90-4B17-8FA0-F4CA88AB49D3}
+		{5B776F18-B15C-4ABE-BAA5-80DE2E516A81} = {FB7149BE-B392-41A4-9877-091FC0AE99E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		DPBuild = 5
